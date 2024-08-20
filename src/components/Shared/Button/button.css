@@ -7,4 +7,17 @@
   font-weight: 700;
   text-align: center;
   line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--primary);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: var(--neutral-10);
+  border: 1px solid var(--primary);
+}
+
+.primary:hover {
+  background-color: var(--primary-hover);
 }
