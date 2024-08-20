@@ -1,9 +1,7 @@
+import Header from "../header/Header";
+
 function Home() {
-  return (
-    <>
-      <div>Hello World</div>
-    </>
-  );
+  return <Header />;
 }
 
 export default Home;
