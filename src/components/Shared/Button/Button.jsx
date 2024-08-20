@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import "./button.css";
 
 function Button({
@@ -19,13 +18,5 @@ function Button({
     </button>
   );
 }
-
-Button.propTypes = {
-  label: PropTypes.string,
-  type: PropTypes.string,
-  classname: PropTypes.string,
-  disabled: PropTypes.bool,
-  onclick: PropTypes.func,
-};
 
 export default Button;
