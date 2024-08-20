@@ -1,3 +1,4 @@
+import Button from "../Shared/Button/Button";
 import "./header.css";
 
 function Header() {
@@ -5,7 +6,11 @@ function Header() {
     <header>
       <div className="heading">
         <div className="app-title">Product Roadmap</div>
-        <button>+ Add New Group</button>
+        <Button
+          label="+ Add New Group"
+          classname="primary"
+          onclick={() => {}}
+        />
       </div>
     </header>
   );
