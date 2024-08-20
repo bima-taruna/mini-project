@@ -5,6 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --primary: #01959f;
+  --primary-hover: #006f77;
   --success: #43936c;
   --secondary: #fa9810;
   --secondary-border: #feeabc;
