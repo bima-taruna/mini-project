@@ -22,5 +22,11 @@ test.describe("Header", () => {
   test("clicking button should open modal", async ({ page }) => {
     await page.locator(".primary").click();
     await expect(page.locator(".modal-overlay")).toBeVisible();
+    await page
+      .locator(".modal-close", {
+        name: "X",
+      })
+      .click();
+    await expect(page.locator(".modal-overlay")).not.toBeVisible();
   });
 });
