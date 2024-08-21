@@ -1,4 +1,5 @@
 .btn {
+  min-width: 8.63rem;
   padding: 0.25rem 1rem;
   background-color: var(--neutral-10);
   border: 1px solid var(--neutral-40);
