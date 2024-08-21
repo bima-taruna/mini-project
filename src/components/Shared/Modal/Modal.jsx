@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
-
+import "./modal.css";
 function Modal({ title, icons = "", children, onClose }) {
   return (
     <div className="modal-overlay">
