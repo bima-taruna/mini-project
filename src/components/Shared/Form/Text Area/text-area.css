@@ -1,0 +1,27 @@
+.text-area-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--neutral-90);
+}
+
+textarea {
+  resize: none;
+  padding: 0.5rem 1rem;
+  min-height: 5.5rem;
+  border: 0.125rem solid var(--neutral-40);
+  border-radius: 0.5rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+textarea:active {
+  outline: none !important;
+  border: 0.125rem solid var(--primary);
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 0.125rem solid var(--primary-focus);
+}
