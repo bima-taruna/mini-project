@@ -6,6 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
   --primary: #01959f;
   --primary-hover: #006f77;
+  --primary-focus: rgba(1, 149, 159, 0.2);
   --success: #43936c;
   --secondary: #fa9810;
   --secondary-border: #feeabc;
