@@ -6,7 +6,7 @@ function Form({
   buttonLabel,
   className,
   onSubmit,
-  onClick,
+  onCancel,
 }) {
   return (
     <form
@@ -15,7 +15,7 @@ function Form({
     >
       {children}
       <div className="button-group">
-        <Button label="Cancel" onclick={onClick} />
+        <Button label="Cancel" onclick={onCancel} />
         <Button type="submit" label={buttonLabel} classname="primary" />
       </div>
     </form>

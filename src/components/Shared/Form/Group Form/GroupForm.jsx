@@ -1,12 +1,12 @@
 import TextInput from "../../Input/Text Input/TextInput";
 import TextArea from "../../Input/Text Area/TextArea";
 import Form from "../Base Form/Form";
-function GroupForm({ onClick }) {
+function GroupForm({ onCancel }) {
   return (
     <Form
       buttonLabel={"Submit"}
       className={"group-form"}
-      onClick={onClick}
+      onCancel={onCancel}
       onSubmit={() => {}}
     >
       <TextInput
