@@ -2,16 +2,18 @@ import Button from "../Button/Button";
 
 function Modal({ title, icons, children, onClose }) {
   return (
-    <section className="modal">
-      <div className="modal-head">
-        <div className="modal-title">
-          {icons ? icons : ""}
-          {title}
+    <div className="modal-overlay">
+      <section className="modal">
+        <div className="modal-head">
+          <div className="modal-title">
+            {icons ? icons : ""}
+            {title}
+          </div>
+          <Button label="X" onclick={onClose} />
         </div>
-        <Button label="X" onclick={onClose} />
-      </div>
-      {children}
-    </section>
+        {children}
+      </section>
+    </div>
   );
 }
 
