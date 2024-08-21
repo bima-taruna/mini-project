@@ -13,6 +13,7 @@ function TextInput({ title, placeholder, onChange, name, value }) {
         value={value}
         min={4}
         max={100}
+        required
       />
     </div>
   );
