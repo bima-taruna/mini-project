@@ -1,0 +1,12 @@
+.modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
+.modal {
+  min-width: 26.25rem;
+  background-color: var(--neutral-10);
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+}
