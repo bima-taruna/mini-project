@@ -1,5 +1,6 @@
 import GroupContainer from "../Shared/Group Container/GroupContainer";
 import getColor from "../../utils/getColor";
+import Task from "../Shared/Task/Task";
 import "./content.css";
 function Content({ groupData, loading, error }) {
   return (
@@ -14,7 +15,7 @@ function Content({ groupData, loading, error }) {
               description={item.description}
               classname={getColor(index + 1)}
             >
-              asdasdas
+              <Task />
             </GroupContainer>
           </div>
         ))}
