@@ -1,6 +1,6 @@
 import "./progress-input.css";
 
-function ProgressInput({ title, placeholder, onChange, name, value }) {
+function ProgressInput({ title, placeholder, onChange, name, id, value }) {
   return (
     <div className="progress-input">
       <label htmlFor={name}>{title}</label>
@@ -9,7 +9,7 @@ function ProgressInput({ title, placeholder, onChange, name, value }) {
         name={name}
         placeholder={placeholder}
         onChange={onChange}
-        id={name}
+        id={id}
         value={value}
         min={0}
         step={5}
