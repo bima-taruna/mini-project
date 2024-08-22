@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/v1",
-      "destination": "https://mini-project-eight-pearl.vercel.app/v1"
+      "destination": "https://mini-project-eight-pearl.vercel.app"
     }
   ]
 }
