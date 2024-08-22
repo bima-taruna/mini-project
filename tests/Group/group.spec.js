@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-const url = process.env.VITE_BASE_URL;
+const url = "https://mini-project-eight-pearl.vercel.app/v1";
 test.describe("Header", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(url);
