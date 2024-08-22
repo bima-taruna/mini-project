@@ -1,8 +1,25 @@
 .group-label {
+  max-width: 5.5rem;
+  text-align: center;
   padding: 0.125rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.25rem;
   color: var(--primary);
   border: 1px solid var(--primary);
+  border-radius: 0.25rem;
+}
+
+.group-label.green {
+  border: 1px solid var(--primary);
+}
+
+.group-label.yellow {
+  border: 1px solid var(--secondary-border);
+  color: var(--secondary);
+}
+
+.group-label.red {
+  border: 1px solid var(--danger-border);
+  color: var(--danger);
 }
