@@ -6,6 +6,9 @@ header {
   padding-left: 1.25rem;
   padding-right: 1.5rem;
   border-bottom: 1px solid var(--neutral-40);
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .heading {
