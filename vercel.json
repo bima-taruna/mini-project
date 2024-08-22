@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "/v1/:path*"
+      "source": "/v1",
+      "destination": "https://mini-project-eight-pearl.vercel.app/v1"
+    },
+    {
+      "source": "/v1/:path*",
+      "destination": "https://mini-project-eight-pearl.vercel.app/v1/:path*"
     }
   ]
 }
