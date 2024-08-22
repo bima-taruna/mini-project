@@ -3,10 +3,6 @@
     {
       "source": "/v1/:path*",
       "destination": "https://mini-project-eight-pearl.vercel.app/:path*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/"
     }
   ]
 }
