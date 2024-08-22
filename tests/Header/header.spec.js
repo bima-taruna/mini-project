@@ -22,12 +22,6 @@ test.describe("Header", () => {
   test("clicking button should open modal", async ({ page }) => {
     await page.locator(".primary").click();
     await expect(page.locator(".modal-overlay")).toBeVisible();
-    // await page
-    //   .locator(".modal-close", {
-    //     name: "X",
-    //   })
-    //   .click();
-    // await expect(page.locator(".modal-overlay")).not.toBeVisible();
   });
 
   test("should return an object on form submission", async ({ page }) => {
@@ -46,6 +40,13 @@ test.describe("Header", () => {
           title: "Group Task 1",
           description: "January - March",
         });
+
+        const headers = {
+          ...request.headers(),
+          Authorization: `${process.env.VITE_TOKEN}`,
+        };
+
+        route.continue({ headers });
       }
     );
   });
