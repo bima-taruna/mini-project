@@ -5,7 +5,7 @@ function Button({
   type = "button",
   classname = "",
   disabled = false,
-  onclick,
+  onclick = undefined,
 }) {
   return (
     <button
