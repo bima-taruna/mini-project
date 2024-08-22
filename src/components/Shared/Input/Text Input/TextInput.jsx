@@ -1,15 +1,15 @@
 import "./text-input.css";
 
-function TextInput({ title, placeholder, onChange, name, value }) {
+function TextInput({ title, placeholder, onChange, name, id, value }) {
   return (
     <div className="text-input">
-      <label htmlFor={name}>{title}</label>
+      <label htmlFor={id}>{title}</label>
       <input
         type="text"
         name={name}
         placeholder={placeholder}
         onChange={onChange}
-        id={name}
+        id={id}
         value={value}
         min={4}
         max={100}

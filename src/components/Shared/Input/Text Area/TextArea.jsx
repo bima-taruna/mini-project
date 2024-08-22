@@ -1,12 +1,12 @@
 import "./text-area.css";
 
-function TextArea({ title, placeholder, onChange, name, value }) {
+function TextArea({ title, placeholder, onChange, name, id, value }) {
   return (
     <div className="text-area-input">
-      <label htmlFor={name}>{title}</label>
+      <label htmlFor={id}>{title}</label>
       <textarea
         name={name}
-        id={name}
+        id={id}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
