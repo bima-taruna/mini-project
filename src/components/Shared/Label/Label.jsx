@@ -1,6 +1,6 @@
 import "./label.css";
 
-function Label(name) {
+function Label({ name }) {
   return <div className="group-label">{name}</div>;
 }
 
