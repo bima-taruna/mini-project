@@ -3,7 +3,7 @@ import TextArea from "../../Input/Text Area/TextArea";
 import Form from "../Base Form/Form";
 import useForm from "../../../../hooks/useForm";
 import usePost from "../../../../hooks/usePost";
-function GroupForm({ onCancel }) {
+function GroupForm({ onCancel, setGroupData }) {
   const { values, handleChange, resetForm } = useForm({
     title: "",
     description: "",
@@ -16,6 +16,7 @@ function GroupForm({ onCancel }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await postData(values);
+    setGroupData((oldData) => [...oldData, values]);
     resetForm();
   };
 
@@ -28,7 +29,7 @@ function GroupForm({ onCancel }) {
   }
 
   if (error) {
-    console.log(error);
+    return <p>Error</p>;
   }
 
   return (
