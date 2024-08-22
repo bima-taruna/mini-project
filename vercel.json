@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/:path*",
-      "destination": "/app/:path*"
+      "destination": "/v1/:path*"
     }
   ]
 }
